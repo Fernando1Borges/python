@@ -1,6 +1,6 @@
 #in terminal run python main.py soccer yes
 
-#lets write a Simple script 
+#lets write a Simple script
 #to get the 20 words and their frequency percentage
 #with highest frequency in an English Wikipedia article.
 #applications are recommender systems, chatbots and NLP, sentiment analysis,
