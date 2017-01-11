@@ -56,8 +56,8 @@ def main():
 
     #define our turns or keyboard actions
     left = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', True), ('KeyEvent', 'ArrowRight', False)]
-    right = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False, ('KeyEvent', 'ArrowRight', True)]
-    forward = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False), ('KeyEvent', 'ArrowRight', False)]
+    right = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False), ('KeyEvent', 'ArrowRight', True)]
+    Forward = [('KeyEvent', 'ArrowUp', True), ('KeyEvent', 'ArrowLeft', False), ('KeyEvent', 'ArrowRight', False)]
     #this is for formatting purposes
 
     #main logic
@@ -82,7 +82,7 @@ def main():
                     turn = False
         elif(~turn):
             #if no turn is needed, go straight
-            action_n = [forward for ob in observation_n]
+            action_n = [Forward for ob in observation_n]
 
 
         #if there is an observation, the game has started, check if turn is needed
